@@ -21,13 +21,15 @@ a{
     font-size: 20px;
     font-weight: 700;
 }
+/* Shared Styles */
 .flex {
     display: flex;
 }
-/* Shared Styles */
+
  .dextop-hidden {
     display: none;
  }
+ /* end of shared styles */
 
 /* Particular styles */
 header {
@@ -112,7 +114,84 @@ header {
 .banner-img-container>img {
     width: 100%;
 }
+/* standard-section */
+.standard {
+    margin-top: 70px;
+    background-image: url(/assets/bg.png);
+    background-size: cover;
+   }
+.standard-title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800px;
+   }
+.standard-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+    text-align: center;
+}
+.stand-child {
+    height: 475px;
+    width: 365px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px lightgray;
+}
+.stand-child-1 {
+    background: linear-gradient( 180deg, #b8e4f7 0%, #DEF5FF 15%, #ffffff 30%,  #ffffff 100%);
+}
+.stand-child-2 {
+    background: linear-gradient(175deg, #FFF4DC 0%, #FFF4DC 15%, #ffffff 35%, #ffffff 100%);
 
+}
+.stand-child-3 {
+    background: linear-gradient(180deg, #F2E8FF 0%, #F2E8FF 15%, #ffffff 35%, #ffffff 100%);
+}
+
+.stand-img-con {
+    margin-top: 32px;
+}
+.stand-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color:#202020;
+    margin-top: 32px;
+}
+.stand-des {
+    font-size: 15px;
+    font-weight: 500;
+    color:#808080; 
+    margin-top: 32px;
+}
+.read {
+    font-size: 15px;
+    font-weight: 720;
+    margin-top: 32px;
+}
+.read-1{
+    color: skyblue;
+}
+.read-2 {
+    color: orange;
+}
+.read-3 {
+    color:#5D58EF;
+}
+.stand-btn-con {
+    margin-top: 80px;
+    text-align: center;
+}
+.stand-btn {
+    margin: 0 5px;
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+}
 /* responsive-web-layout */
 /* medium-device */
 @media screen and (min-width:576.01px) and (max-width: 980px) {
@@ -148,7 +227,12 @@ header {
     .banner-img-container {
         width: 100%;
     }
-  
+    /* standard-section */
+    .standard-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 /* Mobile device */
  @media screen and (max-width:576px) {
@@ -182,6 +266,14 @@ header {
         text-align: center;
     }
     .banner-img-container {
+        width: 100%;
+    }
+    /* standard-section */
+    .standard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stand-child {
         width: 100%;
     }
  }
