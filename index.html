@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <title>Assignment-2</title>
 </head>
-<body>
-    
+<body class="quicksand-font">
+    <header>
+        <nav class="nav-bar flex">
+            <div class="nav-child flex">
+                <div class="img-container"><img src="assets/logo.png" alt=""></div>
+                <h2 class="nav-heading mobile-hidden">School</h2>
+            </div>
+            <div class="nav-child flex mobile-hidden">
+                <ul class="flex medium-hidden">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Facilities</a></li>
+                    <li><a href="">Admission</a></li>
+                </ul>
+                <div class="nav-child flex dextop-hidden medium-show"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <div class="nav-child flex mobile-hidden">
+                <button class="contact-btn">Contact</button>
+            </div>
+            <div class="nav-child flex dextop-hidden medium-hidden mobile-show"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+    <div class="border dextop-hidden mobile-show"></div>
+    <main class="main">
+        <section class="banner">
+            <div class="banner-content">
+                <h1 class="banner-heading"><span style="color: orange">Empowering <br> </span>student from small age <span style="color:skyblue;">towards vision.</span></h1>
+                <p class="banner-description">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
+                <button class="banner-btn">Enroll Now</button>
+            </div>
+            <div class="banner-img-container"><img src="assets/hero-kids.png" alt=""></div>
+        </section>
+    </main>
 </body>
 </html>
