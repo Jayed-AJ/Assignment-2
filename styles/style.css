@@ -1,3 +1,4 @@
+/* Basic style */
 .quicksand-font {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -26,7 +27,7 @@ a{
     display: flex;
 }
 
- .dextop-hidden {
+.dextop-hidden {
     display: none;
  }
  /* end of shared styles */
@@ -257,6 +258,62 @@ header {
     font-size: 18px;
     font-weight: 650;
 }
+/* footer section */
+ footer {
+    padding: 130px 0;
+    background-color: rgb(245, 13, 117);
+    width: 84%;
+    margin: 0 auto;
+    margin-top: 30px;
+ }
+.foot-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.foot-box {
+    width: 25%;
+    color: white;
+}
+.foot-box-head {
+    display: flex;
+    align-items: center;
+}
+.foot-box-head>p {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.foot-box-head>img {
+    border: 2px solid red;
+    fill: rgb(216, 15, 15);
+}
+.foot-box-head-2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.foot-box>ul>li {
+    list-style: none;
+    margin-top: 8px;
+}
+.foot-box-des {
+    margin-top: 20px;
+}
+.foot-logo-box {
+    display: flex;
+    justify-content: start;
+    gap: 4px;
+    margin-top: 40px;
+}
+.foot-logo {
+    height: 35px;
+    width: 35px;
+}
+.foot-logo>img {
+    height: 100%;
+    width: 100%;
+}
+
 /* responsive-web-layout */
 /* medium-device */
 @media screen and (min-width:576.01px) and (max-width: 980px) {
@@ -314,6 +371,10 @@ header {
     .story-box-1 {
         display: none;
     }
+    /* footer section*/
+    footer {
+        width: 100%;
+    }
 }
 /* Mobile device */
  @media screen and (max-width:576px) {
@@ -321,6 +382,7 @@ header {
         width: 90%;
         margin-top: 15px;
     }
+    /* shared style */
     .mobile-hidden {
         display: none;
     }
@@ -328,6 +390,7 @@ header {
         display: flex;
         font-size: 25px;
     }
+    /* end of shared style */
     .border {
         margin-top: 12px;
         background-color: orange;
@@ -363,6 +426,24 @@ header {
     }
     .story-box-1 {
         display: none;
+    }
+    /* footer section */
+    footer {
+        padding: 80px 0;
+        background-color: rgb(245, 13, 117);
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .foot-container {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 40px;  
+    }
+    .foot-box {
+        width: 100%;
+        color: white;
     }
  }
 
